@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../ui/widget/sidebar.dart';
 import '../model/poli.dart';
 import 'poli_detail.dart';
 import 'poli_item.dart';
@@ -14,7 +15,7 @@ class _PoliPageState extends State<PoliPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black12,
+      drawer: Sidebar(),
       appBar: AppBar(
         title: const Text("Data Poli"),
         actions: [
